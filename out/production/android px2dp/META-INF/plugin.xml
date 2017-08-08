@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>com.liyijiang.androidpx2dp</id>
+  <name>Android Px2dp</name>
+  <version>1.0</version>
+  <vendor email="liyijiang@756643101@qq.com" url="https://github.com/baibai2013/Px2Percent/blob/master/README.md">Px2Percent</vendor>
+
+  <description><![CDATA[
+      parent layout xml px exchange to dp.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <toolWindow id="Android Px2dp" anchor="left" icon="/icons/donut.png" canCloseContents="true" factoryClass="com.liyijaing.androidpx2dp.NewToolWindows"/>
+  </extensions>
+
+</idea-plugin>
