@@ -37,14 +37,19 @@ public class NewToolWindows implements ToolWindowFactory {
     private JCheckBox checkBox10;
     private JCheckBox checkBox11;
     private JCheckBox checkBox12;
+    private JButton write_dimens_btn;
+    private JButton cleandimensbtn;
 
     public static final String COMMOND_CHANGE = "commond_change";
     public static final String COMMOND_CANCLE = "commond_cancle";
     public static final String COMMOND_PX2DP = "commond_px2dp";
+    public static final String COMMOND_WRITEDIMENS = "commond_writedimens";
+    public static final String COMMOND_CLEANDIMENS = "commond_cleandimens";
 
     private ArrayList<JCheckBox> jCheckBoxes;
     String[] string_table_title;//= {"key", "value"};
     String[] string_screenwh;// = {"1920x1080", "2048x1536", "1280x720"};
+    String[] string_screenvalues;
     String[] string_screenOrientation;//= {"portrait", "landscape"};
     String[] string_screendepend;// = {"width", "height"};
     String[] string_device;// = {"value-sw phone", "value-sw pad", "value-sw roobo"};
@@ -90,6 +95,7 @@ public class NewToolWindows implements ToolWindowFactory {
         string_swpad = new int[]{1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
         string_table_title = new String[]{"key", "value"};
         string_screenwh = new String[]{"1920x1080", "2048x1536", "1280x720"};
+        string_screenvalues = new String[]{"values-1920x1080", "values-2048x1536", "values-1280x648"};
         string_screenOrientation = new String[]{"portrait", "landscape"};
         string_screendepend = new String[]{"width", "height"};
         string_device = new String[]{"value-sw phone", "value-sw pad", "value-sw roobo"};
@@ -173,6 +179,20 @@ public class NewToolWindows implements ToolWindowFactory {
                     androidPx2DpControl.dimensChange(swscale, swbase, int_swvalue, platforms);
 
 
+                }else if(command.equals(COMMOND_WRITEDIMENS)){
+                    System.out.println("write dimens");
+
+                    int widthOrHeightindex = jcb_screenWH.getSelectedIndex();
+                    String values = string_screenvalues[widthOrHeightindex];
+                    androidPx2DpControl.writeDimens(values);
+
+                }else if(command.equals(COMMOND_CLEANDIMENS)){
+                    System.out.println("clean dimens");
+
+                    int widthOrHeightindex = jcb_screenWH.getSelectedIndex();
+                    String values = string_screenvalues[widthOrHeightindex];
+                    androidPx2DpControl.cleanDimens(values);
+
                 }
             }
         };
@@ -187,6 +207,12 @@ public class NewToolWindows implements ToolWindowFactory {
         pxtodpbtn.setActionCommand(COMMOND_PX2DP);
         pxtodpbtn.addActionListener(actionListener);
 
+
+        cleandimensbtn.setActionCommand(COMMOND_CLEANDIMENS);
+        cleandimensbtn.addActionListener(actionListener);
+
+        write_dimens_btn.setActionCommand(COMMOND_WRITEDIMENS);
+        write_dimens_btn.addActionListener(actionListener);
 
         jCheckBoxes.add(checkBox1);
         jCheckBoxes.add(checkBox2);

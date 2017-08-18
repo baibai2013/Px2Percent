@@ -1,17 +1,17 @@
 <idea-plugin>
   <id>com.liyijiang.androidpx2dp</id>
   <name>Android Px2dp</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="liyijiang@756643101@qq.com" url="https://github.com/baibai2013/Px2Percent/blob/master/README.md">Px2Percent</vendor>
 
   <description><![CDATA[
       parent layout xml px exchange to dp.<br>
-      <em>most HTML tags may be used</em>
+      <em></em>
     ]]></description>
 
   <change-notes><![CDATA[
       <br>
-      <em>most HTML tags may be used</em>
+      <em>1.add new function Write to Dimens</em>
     ]]>
   </change-notes>
 
