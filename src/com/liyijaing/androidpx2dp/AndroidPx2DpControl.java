@@ -1145,9 +1145,39 @@ public class AndroidPx2DpControl {
                                 elementout.addAttribute("app:layout_marginEndPercent", text);
                                 addAttr(elementout, attribute);
                             } else if (attribute.getName().equals("layout_marginStart")) {
-                                elementout.addAttribute("layout_marginStartPercent", text);
+                                elementout.addAttribute("app:layout_marginStartPercent", text);
                                 addAttr(elementout, attribute);
-                            } else if (attribute.getName().contains("padding")) {
+                            } else if (attribute.getName().equals("maxWidth")) {
+                                elementout.addAttribute("app:layout_maxWidthPercent", text);
+                                addAttr(elementout, attribute);
+                            } else if (attribute.getName().equals("maxHeight")) {
+                                elementout.addAttribute("app:layout_maxHeightPercent", text);
+                                addAttr(elementout, attribute);
+                            } else if (attribute.getName().equals("minWidth")) {
+                                elementout.addAttribute("app:layout_minWidthPercent", text);
+                                addAttr(elementout, attribute);
+                            } else if (attribute.getName().equals("minHeight")) {
+                                elementout.addAttribute("app:layout_minHeightPercent", text);
+                                addAttr(elementout, attribute);
+                            }  else if (attribute.getName().equals("textSize")) {
+                                elementout.addAttribute("app:layout_textSizePercent", text);
+                                addAttr(elementout, attribute);
+                            } else if (attribute.getName().equals("padding")) {
+                                elementout.addAttribute("app:layout_paddingPercent", text);
+                                addAttr(elementout, attribute);
+                            }else if (attribute.getName().equals("paddingTop")) {
+                                elementout.addAttribute("app:layout_paddingTopPercent", text);
+                                addAttr(elementout, attribute);
+                            }else if (attribute.getName().equals("paddingRight")) {
+                                elementout.addAttribute("app:layout_paddingRightPercent", text);
+                                addAttr(elementout, attribute);
+                            }else if (attribute.getName().equals("paddingLeft")) {
+                                elementout.addAttribute("app:layout_paddingLeftPercent", text);
+                                addAttr(elementout, attribute);
+                            }else if (attribute.getName().equals("paddingBottom")) {
+                                elementout.addAttribute("app:layout_paddingBottomPercent", text);
+                                addAttr(elementout, attribute);
+                            }else {
                                 addAttr(elementout, attribute);
                             }
                         }
