@@ -1101,18 +1101,18 @@ public class AndroidPx2DpControl {
 //                        log.requestFocus();
 
                         int old_px = Integer.parseInt(text.replace("px", ""));
-                        if (old_px < 0) {
+                        if (old_px < 2) {
                             addAttr(elementout, attribute);
                         } else {
 
                             float percent;
                             if (percent_w) {
                                 percent = (float) old_px / (float) parent_w;
-                                text = String.format("%.2f", percent * 100) + "%w";
+                                text = String.format("%.3f", percent * 100) + "%w";
 
                             } else {
                                 percent = (float) old_px / (float) parent_h;
-                                text = String.format("%.2f", percent * 100) + "%h";
+                                text = String.format("%.3f", percent * 100) + "%h";
                             }
 
                             System.out.println("percent:" + percent + "---old_px:" + old_px + "---parent_w:" + parent_w);
