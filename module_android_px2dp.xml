@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_android_px2dp" default="compile.module.android_px2dp">
+  <dirname property="module.android_px2dp.basedir" file="${ant.file.module_android_px2dp}"/>
+  
+  <property name="module.jdk.home.android_px2dp" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.android_px2dp" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.android_px2dp" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.android_px2dp" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="android_px2dp.output.dir" value="${module.android_px2dp.basedir}/out/production/android px2dp"/>
+  <property name="android_px2dp.testoutput.dir" value="${module.android_px2dp.basedir}/out/test/android px2dp"/>
+  
+  <path id="android_px2dp.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="android_px2dp.module.production.classpath">
+    <path refid="${module.jdk.classpath.android_px2dp}"/>
+    <pathelement location="${basedir}/lib/dom4j-1.6.1.jar"/>
+  </path>
+  
+  <path id="android_px2dp.runtime.production.module.classpath">
+    <pathelement location="${android_px2dp.output.dir}"/>
+    <pathelement location="${basedir}/lib/dom4j-1.6.1.jar"/>
+  </path>
+  
+  <path id="android_px2dp.module.classpath">
+    <path refid="${module.jdk.classpath.android_px2dp}"/>
+    <pathelement location="${android_px2dp.output.dir}"/>
+    <pathelement location="${basedir}/lib/dom4j-1.6.1.jar"/>
+  </path>
+  
+  <path id="android_px2dp.runtime.module.classpath">
+    <pathelement location="${android_px2dp.testoutput.dir}"/>
+    <pathelement location="${android_px2dp.output.dir}"/>
+    <pathelement location="${basedir}/lib/dom4j-1.6.1.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.android_px2dp">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.android_px2dp">
+    <patternset refid="excluded.from.module.android_px2dp"/>
+  </patternset>
+  
+  <path id="android_px2dp.module.sourcepath">
+    <dirset dir="${module.android_px2dp.basedir}">
+      <include name="src"/>
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.android_px2dp" depends="compile.module.android_px2dp.production,compile.module.android_px2dp.tests" description="Compile module android px2dp"/>
+  
+  <target name="compile.module.android_px2dp.production" depends="register.custom.compilers" description="Compile module android px2dp; production classes">
+    <mkdir dir="${android_px2dp.output.dir}"/>
+    <javac2 destdir="${android_px2dp.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.android_px2dp}/javac">
+      <compilerarg line="${compiler.args.android_px2dp}"/>
+      <bootclasspath refid="android_px2dp.module.bootclasspath"/>
+      <classpath refid="android_px2dp.module.production.classpath"/>
+      <src refid="android_px2dp.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.android_px2dp"/>
+    </javac2>
+    
+    <copy todir="${android_px2dp.output.dir}">
+      <fileset dir="${module.android_px2dp.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.android_px2dp.basedir}/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.android_px2dp.tests" depends="register.custom.compilers,compile.module.android_px2dp.production" description="compile module android px2dp; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.android_px2dp" description="cleanup module">
+    <delete dir="${android_px2dp.output.dir}"/>
+    <delete dir="${android_px2dp.testoutput.dir}"/>
+  </target>
+  
+  <property name="android_px2dp.plugin.path.jar" value="${module.android_px2dp.basedir}/android px2dp.zip"/>
+  
+  <!-- Build archive for plugin 'android px2dp' -->
+  <target name="plugin.build.jar.android_px2dp" depends="compile.module.android_px2dp" description="Build plugin archive for module &#39;android px2dp&#39;">
+    <property name="tmp.dir.android_px2dp" value="${module.android_px2dp.basedir}/../temp"/>
+    <mkdir dir="${tmp.dir.android_px2dp}"/>
+    <mkdir dir="${tmp.dir.android_px2dp}/lib"/>
+    <jar destfile="${tmp.dir.android_px2dp}/lib/android px2dp.jar" duplicate="preserve">
+      <zipfileset dir="${module.android_px2dp.basedir}/out/production/android px2dp"/>
+      <zipfileset file="${module.android_px2dp.basedir}/resources/META-INF/plugin.xml" prefix="META-INF"/>
+      <manifest>
+        <attribute name="Created-By" value="IntelliJ IDEA"/>
+        <attribute name="Manifest-Version" value="1.0"/>
+      </manifest>
+    </jar>
+    <copy file="${module.android_px2dp.basedir}/lib/dom4j-1.6.1.jar" tofile="${tmp.dir.android_px2dp}/lib/dom4j-1.6.1.jar"/>
+    <zip destfile="${android_px2dp.plugin.path.jar}">
+      <fileset dir="${module.android_px2dp.basedir}/../temp"/>
+    </zip>
+    <delete dir="${tmp.dir.android_px2dp}"/>
+  </target>
+</project>

@@ -14,6 +14,7 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class AndroidPx2DpControl {
@@ -943,8 +944,8 @@ public class AndroidPx2DpControl {
                     String text = element.getText();
 
                     if (text.contains("px")) {
-                        int old_px = Integer.parseInt(text.replace("px", ""));
-                        int new_px = (int) Math.floor((float) old_px / swscale);
+                        float old_px = Float.parseFloat(text.replace("px", ""));
+                        String new_px = String.format("%.2f",old_px / swscale);
                         text = new_px + "dp";
                     }
                     elementout.addText(text);
@@ -1008,11 +1009,9 @@ public class AndroidPx2DpControl {
                             String text = element.getText();
 
                             if (text.contains("dp")) {
-                                int old_px = Integer.parseInt(text.replace("dp", ""));
-                                int new_px = 0;
-                                new_px = (int) Math.round(old_px * scale);
+                                float old_px = Float.parseFloat(text.replace("dp", ""));
+                                String new_px = String.format("%.2f",old_px * scale);
                                 text = new_px + "dp";
-
                             }
                             elementout.addText(text);
 
@@ -1182,11 +1181,11 @@ public class AndroidPx2DpControl {
                             }
                         }
 
-                    } else {
+                    }else if (text.endsWith("%w") || text.endsWith("%h")) {
+
+                    }else {
                         addAttr(elementout, attribute);
-
                     }
-
                 }
 
                 if (element.elements().size() > 0) {
