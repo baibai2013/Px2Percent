@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3a7c93-757b-4e15-a94f-ab982312fde2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android px2dp.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java" afterPath="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/res/values-1920x1080/dimens.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/android px2dp.iml" afterPath="$PROJECT_DIR$/android px2dp.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/android px2dp/META-INF/plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$1.class" afterPath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$2.class" afterPath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$3.class" afterPath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$4.class" afterPath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl.class" afterPath="$PROJECT_DIR$/out/production/android px2dp/com/liyijaing/androidpx2dp/AndroidPx2DpControl.class" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java" afterPath="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,86 +39,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyToolWindows.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/MyToolWindows.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4020">
-              <caret line="268" column="241" lean-forward="false" selection-start-line="268" selection-start-column="228" selection-end-line="268" selection-end-column="241" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstantiatingComponentAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/picocontainer.jar!/org/picocontainer/defaults/InstantiatingComponentAdapter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
-              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AndroidPx2DpControl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="1189" column="0" lean-forward="true" selection-start-line="1189" selection-start-column="0" selection-end-line="1189" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1078#1094#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecimalFormat.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/text/DecimalFormat.java">
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5700">
-              <caret line="432" column="11" lean-forward="false" selection-start-line="432" selection-start-column="11" selection-end-line="432" selection-end-column="11" />
+            <state relative-caret-position="4110">
+              <caret line="274" column="12" lean-forward="false" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-1920x1080/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+            <state relative-caret-position="525">
+              <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-sw360dp/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android px2dp.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android px2dp.iml">
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-sw400dp/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewToolWindows.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2835">
-              <caret line="201" column="52" lean-forward="false" selection-start-line="201" selection-start-column="52" selection-end-line="201" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +96,38 @@
         <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-sw432dp/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-sw720dp/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewToolWindows.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="186" column="46" lean-forward="false" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -143,6 +152,8 @@
       <find>setText</find>
       <find>donutmentFilename</find>
       <find>getText</find>
+      <find>Not valid XML files</find>
+      <find>123</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,8 +186,12 @@
         <option value="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/MyToolWindows.java" />
         <option value="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.form" />
         <option value="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.java" />
+        <option value="$PROJECT_DIR$/res/values-1920x1080/dimens.xml" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/res/layout/fg_music_lesson_entrance.xml" />
+        <option value="$PROJECT_DIR$/res/layout/fg_music_lesson_objective.xml" />
         <option value="$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java" />
+        <option value="$PROJECT_DIR$/res/layout/bw_item_discovery_userecommend.xml" />
       </list>
     </option>
   </component>
@@ -197,7 +212,7 @@
     <option name="x" value="6" />
     <option name="y" value="23" />
     <option name="width" value="1899" />
-    <option name="height" value="1007" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,7 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,7 +241,29 @@
             <path>
               <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Px2Percent" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Px2Percent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Px2Percent" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Px2Percent" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Px2Percent" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values-1920x1080" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
@@ -250,15 +287,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="androidpx2dp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="android px2dp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -278,12 +311,13 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="android_px2dp" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/icons" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/values-1920x1080" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -298,13 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Plugin.Plugin">
-    <configuration name="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="android px2dp" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -346,12 +374,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="android px2dp" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -386,9 +408,24 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="android px2dp" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="android px2dp" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -460,11 +497,31 @@
       <workItem from="1520388910050" duration="740000" />
       <workItem from="1520389711860" duration="136000" />
       <workItem from="1520391569623" duration="741000" />
+      <workItem from="1522122576602" duration="159000" />
+      <workItem from="1522812071775" duration="615000" />
+      <workItem from="1522812841824" duration="567000" />
+      <workItem from="1522813446479" duration="146000" />
+      <workItem from="1522813600559" duration="1000" />
+      <workItem from="1522813613948" duration="584000" />
+      <workItem from="1522814286302" duration="962000" />
+      <workItem from="1522815279800" duration="57000" />
+      <workItem from="1522815399605" duration="1305000" />
+      <workItem from="1522839029833" duration="154000" />
+      <workItem from="1522839250542" duration="114000" />
+      <workItem from="1522839420407" duration="87000" />
+      <workItem from="1522839960988" duration="905000" />
+      <workItem from="1524711666340" duration="332000" />
+      <workItem from="1524712042970" duration="325000" />
+      <workItem from="1524712403231" duration="37000" />
+      <workItem from="1524712824318" duration="55000" />
+      <workItem from="1524713114461" duration="166000" />
+      <workItem from="1524713313445" duration="346000" />
+      <workItem from="1524713687962" duration="49000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138693000" />
+    <option name="totallyTimeSpent" value="149238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,8 +533,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="23" width="1899" height="1007" extended-state="0" />
-    <editor active="true" />
+    <frame x="6" y="23" width="1899" height="999" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49815693" order="13" side_tool="false" content_ui="tabs" />
@@ -487,29 +543,50 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.50188476" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3080214" sideWeight="0.49815693" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30744338" sideWeight="0.49815693" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49811524" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279396" sideWeight="0.49811524" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23538704" sideWeight="0.3991228" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Android Px2dp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2358643" sideWeight="0.60087717" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2395998" sideWeight="0.36725664" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24932687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.50188476" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="px2dp toolwindow" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32291666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Android Px2dp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23909532" sideWeight="0.6493363" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24932687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49815693" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30744338" sideWeight="0.49815693" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279396" sideWeight="0.49811524" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23909532" sideWeight="0.35066372" order="0" side_tool="false" content_ui="combo" />
       <window_info id="android px2dpss" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="android px2dp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23424879" sideWeight="0.65789473" order="8" side_tool="true" content_ui="tabs" x="886" y="320" width="326" height="546" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +597,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java</url>
+          <line>622</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -529,55 +614,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/javax/swing/DefaultComboBoxModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1197">
-          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/javax/swing/JCheckBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/util/ui/CheckBox.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/codeInspection/InspectionProfileEntry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-781">
-          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/lib/jconsole.jar!/com/sun/tools/jconsole/JConsoleContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/lib/jconsole.jar!/com/sun/tools/jconsole/JConsolePlugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/lib/jconsole.jar!/sun/tools/jconsole/JConsole.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="259" column="9" lean-forward="false" selection-start-line="259" selection-start-column="9" selection-end-line="259" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/project/Project.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -648,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,14 +722,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Iterator.java" />
     <entry file="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/org/dom4j/Element.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -702,25 +730,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="145" column="13" lean-forward="false" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="352" column="62" lean-forward="true" selection-start-line="352" selection-start-column="62" selection-end-line="352" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Set.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/picocontainer.jar!/org/picocontainer/defaults/InstantiatingComponentAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1620">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -729,11 +744,6 @@
         <state relative-caret-position="498">
           <caret line="84" column="15" lean-forward="true" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/META-INF/MANIFEST.MF">
@@ -754,60 +764,171 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4020">
           <caret line="268" column="241" lean-forward="false" selection-start-line="268" selection-start-column="228" selection-end-line="268" selection-end-column="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/text/DecimalFormat.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/text/NumberFormat.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Math.java" />
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fg_music_lesson_entrance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="69" column="89" lean-forward="false" selection-start-line="69" selection-start-column="89" selection-end-line="69" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-sw320dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/text/DecimalFormat.java">
+    <entry file="file://$PROJECT_DIR$/res/values-sw432dp/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5700">
-          <caret line="432" column="11" lean-forward="false" selection-start-line="432" selection-start-column="11" selection-end-line="432" selection-end-column="11" />
+        <state relative-caret-position="405">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/text/NumberFormat.java">
+    <entry file="file://$PROJECT_DIR$/res/values-sw720dp/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="289" column="24" lean-forward="false" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+        <state relative-caret-position="435">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values-1920x1080/dimens.xml" />
-    <entry file="file://$PROJECT_DIR$/res/values-sw360dp/dimens.xml" />
-    <entry file="file://$PROJECT_DIR$/res/values-sw320dp/dimens.xml" />
-    <entry file="file://$PROJECT_DIR$/res/values-sw432dp/dimens.xml" />
+    <entry file="file://$PROJECT_DIR$/res/values-sw400dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fg_music_lesson_objective.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" column="90" lean-forward="true" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4110">
+          <caret line="274" column="12" lean-forward="false" selection-start-line="274" selection-start-column="12" selection-end-line="274" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-sw360dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/NewToolWindows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
-          <caret line="201" column="52" lean-forward="false" selection-start-line="201" selection-start-column="52" selection-end-line="201" selection-end-column="52" />
+        <state relative-caret-position="437">
+          <caret line="186" column="46" lean-forward="false" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/bw_item_discovery_userecommend.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="440" column="25" lean-forward="false" selection-start-line="440" selection-start-column="25" selection-end-line="440" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/res/values-1920x1080/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="525">
+          <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/maven-aether-provider-3.3.9-all.jar!/org/apache/commons/lang3/StringEscapeUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="68" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="14" selection-end-column="68" />
+          <folding>
+            <marker date="1520276900000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1520276900000" expanded="true" signature="148:949" ph="..." />
+            <marker date="1520276900000" expanded="true" signature="1911:1929" ph="/**...*/" />
+            <marker date="1520276900000" expanded="true" signature="4896:4903" ph="{}" />
+            <marker date="1520276900000" expanded="false" signature="4960:4971" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5007:5013" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5076:5087" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5129:5135" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5192:5203" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5239:5245" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5304:5315" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5353:5359" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5424:5435" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5479:5485" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5544:5555" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5593:5599" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5657:5668" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5705:5711" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5769:5780" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5817:5823" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5883:5894" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="5933:5939" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="5999:6010" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6049:6055" ph=" }" />
+            <marker date="1520276900000" expanded="true" signature="6061:6079" ph="/**...*/" />
+            <marker date="1520276900000" expanded="false" signature="6150:6161" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6196:6202" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="6254:6265" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6302:6308" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="6360:6371" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6408:6414" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="6472:6483" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6520:6526" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="6582:6593" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6628:6634" ph=" }" />
+            <marker date="1520276900000" expanded="false" signature="6692:6703" ph=" { " />
+            <marker date="1520276900000" expanded="false" signature="6740:6746" ph=" }" />
+            <marker date="1520276900000" expanded="true" signature="6759:7666" ph="{...}" />
+            <marker date="1520276900000" expanded="true" signature="7729:8960" ph="{...}" />
+            <marker date="1520276900000" expanded="true" signature="8023:8034" ph="{}" />
+            <marker date="1520276900000" expanded="true" signature="8127:8954" ph="{...}" />
+            <marker date="1520276900000" expanded="true" signature="9021:10033" ph="{...}" />
+            <marker date="1520276900000" expanded="true" signature="9313:9324" ph="{}" />
+            <marker date="1520276900000" expanded="true" signature="9417:10027" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/liyijaing/androidpx2dp/AndroidPx2DpControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="1189" column="0" lean-forward="true" selection-start-line="1189" selection-start-column="0" selection-end-line="1189" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1078#1094#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,6 +986,18 @@
       <state key="ModuleStructureConfigurable.UI">
         <settings>
           <last-edited>android px2dp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>IntelliJ IDEA IU-173.4674.33</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

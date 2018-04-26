@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.liyijiang.androidpx2dp</id>
   <name>Android Px2dp</name>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
   <vendor email="liyijiang@756643101@qq.com" url="https://github.com/baibai2013/Px2Percent/blob/master/README.md">Px2Percent</vendor>
 
   <description><![CDATA[

@@ -9,6 +9,7 @@ import com.intellij.openapi.fileEditor.FileDocumentManager;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.dom4j.*;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
@@ -35,7 +36,7 @@ public class AndroidPx2DpControl {
 
         try {
 
-            isHadDimens  = false;
+            isHadDimens = false;
 
             com.intellij.openapi.editor.Editor editor = FileEditorManager.getInstance(project).getSelectedTextEditor();
             Document document = editor.getDocument();
@@ -43,27 +44,28 @@ public class AndroidPx2DpControl {
             VirtualFile file = FileDocumentManager.getInstance().getFile(document);
             String filename = file.getName();
             donutmentFilename = filename.substring(0, filename.indexOf("."));
+            System.out.println("donutmentFilename = " + file.getName() + "-- platform:" + platform);
 
             if (!filename.endsWith(".xml")) {
                 Notifications.Bus.notify(new com.intellij.notification.Notification("android px2dp", "px2dp info", "Not valid XML files", NotificationType.INFORMATION));
 
                 return;
             }
-            System.out.println("donutmentFilename = " + file.getName() + "-- platform:" + platform);
+//            System.out.println("donutmentFilename = " + file.getName() + "-- platform:" + platform);
 
             org.dom4j.Document documentxml = DocumentHelper.parseText(document.getText());
 
 
             Element root = documentxml.getRootElement();
             String rootname = root.getName();
-            if (!rootname.endsWith("Layout")) {
+            if (!rootname.endsWith("Layout") && !rootname.endsWith("layout")) {
                 Notifications.Bus.notify(new com.intellij.notification.Notification("android px2dp", "px2dp info", "Not valid XML files", NotificationType.INFORMATION));
                 return;
             }
 
             //检查是否有dimens 一般从新生产 dimens
             checkHasDimens(root);
-            if(isHadDimens){
+            if (isHadDimens) {
                 System.out.println("isHadDimens------>>>>>>>>");
                 cleanDimens(platform);
             }
@@ -90,7 +92,7 @@ public class AndroidPx2DpControl {
                 Attribute attribute = (Attribute) object;
                 String text = attribute.getText();
 
-                if (text.endsWith("px") || text.endsWith("dp")) {
+                if (text.endsWith("px") || text.endsWith("dp") || text.endsWith("sp")) {
                     String dimensName = getDimensName(rootout, attribute, "0");
                     String newText = "@dimen/" + dimensName;
                     dimensMap.put(dimensName, text);
@@ -121,7 +123,7 @@ public class AndroidPx2DpControl {
             ApplicationManager.getApplication().runWriteAction(new Runnable() {
                 @Override
                 public void run() {
-                    document.setText(stringWriter.toString());
+                    document.setText(StringEscapeUtils.unescapeXml(stringWriter.toString()));
 
                 }
             });
@@ -159,7 +161,7 @@ public class AndroidPx2DpControl {
             org.dom4j.Document documentxml = DocumentHelper.parseText(document.getText());
             Element root = documentxml.getRootElement();
             String rootname = root.getName();
-            if (!rootname.endsWith("Layout")) {
+            if (!rootname.endsWith("Layout") && !rootname.endsWith("layout")) {
                 Notifications.Bus.notify(new com.intellij.notification.Notification("android px2dp", "px2dp info", "Not valid XML files", NotificationType.INFORMATION));
                 return;
             }
@@ -239,8 +241,7 @@ public class AndroidPx2DpControl {
     }
 
 
-
-    private void checkHasDimens(Element inroot){
+    private void checkHasDimens(Element inroot) {
 
         for (int i = 0, size = inroot.nodeCount(); i < size; i++) {
             Node node = inroot.node(i);
@@ -253,7 +254,7 @@ public class AndroidPx2DpControl {
                     String text = attribute.getText();
 
                     if (text.startsWith("@dimen/")) {
-                       isHadDimens = true;
+                        isHadDimens = true;
                     }
 
                 }
@@ -365,7 +366,7 @@ public class AndroidPx2DpControl {
                     String[] idstringarrr = text.split("/");
                     String key = idstringarrr[1];
                     keylist.add(key);
-                    System.out.println("add key:"+key);
+                    System.out.println("add key:" + key);
                 }
 
             }
@@ -583,6 +584,7 @@ public class AndroidPx2DpControl {
     }
 
     /**
+     * 生成dimens名称
      * @param element   要处理的元素
      * @param attribute 要处理的元素属性
      * @param index     元素在xml的位子
@@ -605,45 +607,34 @@ public class AndroidPx2DpControl {
             sb.append("_");
             sb.append(index);
         }
-        String attr = "_" + attribute.getName();
-        if (attribute.getName().equals("layout_width")) {
-            attr = "_w";
-        } else if (attribute.getName().equals("layout_height")) {
-            attr = "_h";
-        } else if (attribute.getName().equals("layout_marginLeft")) {
-            attr = "_ml";
-        } else if (attribute.getName().equals("layout_marginRight")) {
-            attr = "_mr";
-        } else if (attribute.getName().equals("layout_marginTop")) {
-            attr = "_mt";
-        } else if (attribute.getName().equals("layout_marginBottom")) {
-            attr = "_mb";
-        } else if (attribute.getName().equals("layout_marginEnd")) {
-            attr = "_me";
-        } else if (attribute.getName().equals("layout_marginStart")) {
-            attr = "_ms";
-        } else if (attribute.getName().equals("layout_margin")) {
-            attr = "_m";
-        } else if (attribute.getName().equals("padding")) {
-            attr = "_p";
-        } else if (attribute.getName().equals("paddingLeft")) {
-            attr = "_pl";
-        } else if (attribute.getName().equals("paddingRight")) {
-            attr = "_pr";
-        } else if (attribute.getName().equals("paddingTop")) {
-            attr = "_pt";
-        } else if (attribute.getName().equals("paddingBottom")) {
-            attr = "_pb";
-        } else if (attribute.getName().equals("paddingEnd")) {
-            attr = "_pe";
-        } else if (attribute.getName().equals("paddingStart")) {
-            attr = "_ps";
-        } else if (attribute.getName().equals("textSize")) {
-            attr = "_ts";
-        }
+        String attr = getAttributeSortName(attribute.getName());
         sb.append(attr);
         return sb.toString().toLowerCase();
 
+    }
+
+    /**
+     *名称简写
+     * 一般是首字母和大写字母 注意必须是驼峰风格命名
+     * @param oldName 原来长的名称
+     * @return
+     */
+    private String getAttributeSortName(String oldName) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("_");
+        sb.append(oldName.charAt(0));
+        for (int i = 1; i < oldName.length(); i++) {
+            char c = oldName.charAt(i);
+            if(!Character.isLowerCase(c) && '_'!= c ){
+                    sb.append(c);
+            }
+
+            if(c =='_'){
+                char _c = oldName.charAt(i+1);
+                sb.append(_c);
+            }
+        }
+        return sb.toString().toLowerCase();
     }
 
     private void doWriteDimensElement(String rootindex, Element inroot, Element outroot) {
@@ -660,7 +651,7 @@ public class AndroidPx2DpControl {
                 for (Attribute attribute : attributes) {
                     String text = attribute.getText();
 
-                    if (text.endsWith("px") || text.endsWith("dp")) {
+                    if (text.endsWith("px") || text.endsWith("dp") || text.endsWith("sp")) {
                         String dimensName = getDimensName(element, attribute, index);
                         String newText = "@dimen/" + dimensName;
                         dimensMap.put(dimensName, text);
@@ -704,7 +695,7 @@ public class AndroidPx2DpControl {
             org.dom4j.Document documentxml = DocumentHelper.parseText(document.getText());
             Element root = documentxml.getRootElement();
             String rootname = root.getName();
-            if (!rootname.endsWith("Layout")) {
+            if (!rootname.endsWith("Layout") && !rootname.endsWith("layout")) {
                 Notifications.Bus.notify(new com.intellij.notification.Notification("android px2dp", "px2dp info", "Not valid XML files", NotificationType.INFORMATION));
                 return;
             }
@@ -790,7 +781,7 @@ public class AndroidPx2DpControl {
             org.dom4j.Document documentxml = DocumentHelper.parseText(document.getText());
             Element root = documentxml.getRootElement();
             String rootname = root.getName();
-            if (!rootname.endsWith("Layout")) {
+            if (!rootname.endsWith("Layout") && !rootname.endsWith("Layout")) {
                 Notifications.Bus.notify(new com.intellij.notification.Notification("android px2dp", "px2dp info", "Not valid Layout XML files", NotificationType.INFORMATION));
 
                 return;
@@ -945,7 +936,7 @@ public class AndroidPx2DpControl {
 
                     if (text.contains("px")) {
                         float old_px = Float.parseFloat(text.replace("px", ""));
-                        String new_px = String.format("%.2f",old_px / swscale);
+                        String new_px = String.format("%.2f", old_px / swscale);
                         text = new_px + "dp";
                     }
                     elementout.addText(text);
@@ -1010,7 +1001,7 @@ public class AndroidPx2DpControl {
 
                             if (text.contains("dp")) {
                                 float old_px = Float.parseFloat(text.replace("dp", ""));
-                                String new_px = String.format("%.2f",old_px * scale);
+                                String new_px = String.format("%.2f", old_px * scale);
                                 text = new_px + "dp";
                             }
                             elementout.addText(text);
@@ -1158,32 +1149,32 @@ public class AndroidPx2DpControl {
                             } else if (attribute.getName().equals("minHeight")) {
                                 elementout.addAttribute("app:layout_minHeightPercent", text);
                                 addAttr(elementout, attribute);
-                            }  else if (attribute.getName().equals("textSize")) {
+                            } else if (attribute.getName().equals("textSize")) {
                                 elementout.addAttribute("app:layout_textSizePercent", text);
                                 addAttr(elementout, attribute);
                             } else if (attribute.getName().equals("padding")) {
                                 elementout.addAttribute("app:layout_paddingPercent", text);
                                 addAttr(elementout, attribute);
-                            }else if (attribute.getName().equals("paddingTop")) {
+                            } else if (attribute.getName().equals("paddingTop")) {
                                 elementout.addAttribute("app:layout_paddingTopPercent", text);
                                 addAttr(elementout, attribute);
-                            }else if (attribute.getName().equals("paddingRight")) {
+                            } else if (attribute.getName().equals("paddingRight")) {
                                 elementout.addAttribute("app:layout_paddingRightPercent", text);
                                 addAttr(elementout, attribute);
-                            }else if (attribute.getName().equals("paddingLeft")) {
+                            } else if (attribute.getName().equals("paddingLeft")) {
                                 elementout.addAttribute("app:layout_paddingLeftPercent", text);
                                 addAttr(elementout, attribute);
-                            }else if (attribute.getName().equals("paddingBottom")) {
+                            } else if (attribute.getName().equals("paddingBottom")) {
                                 elementout.addAttribute("app:layout_paddingBottomPercent", text);
                                 addAttr(elementout, attribute);
-                            }else {
+                            } else {
                                 addAttr(elementout, attribute);
                             }
                         }
 
-                    }else if (text.endsWith("%w") || text.endsWith("%h")) {
+                    } else if (text.endsWith("%w") || text.endsWith("%h")) {
 
-                    }else {
+                    } else {
                         addAttr(elementout, attribute);
                     }
                 }
